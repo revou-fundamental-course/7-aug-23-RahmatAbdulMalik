@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <h1>Kalkulator Matematik Segitiga</h1>
+            </div>
+            <div class="segitiga">
+                <a class="button-s" onclick="sluas()">Luas Segitiga</a>
+                <a class="button-s" onclick="skeliling()">Keliling Segitiga</a>
+            </div>
+            <marquee direction="right">
+                <h3>Selamat Datang  - &#129057; Silahkan Pilih, Double Click untuk Pertama Kali &#129057;</h3>
+            </marquee>
+        </nav>
+    </header>
+    <?-- Content --?>
+    <main class="container">
+        <?-- Tampilan Luas --?>
+        <section id="view-luas">
+            <table>
+                <tr>
+                    <th> 
+                        <a href="https://www.ruangguru.com/blog/cara-menghitung-keliling-dan-luas-segitiga"><img src="img/img01.png" alt="www.ruangguru.com" class="imgfluid"></a>
+                    </th>
+                    <th>
+                    <h2>Hitung Luas Segitiga</h2>
+                        <form>
+                            <label for="alas">Alas</label>
+                            <input type="number" placeholder=" Nilai Alas" id="alas" name="alas">
+                            <label for="tinggi">Tinggi</label>
+                            <input type="number" placeholder=" Nilai Tinggi" id="tinggi" name="tinggi">
+                            <label for="luas">Hasil 1/2 * a * t : </label>
+                            <input type="number" name="luas" id="luas" disabled placeholder=" = Hasil Luas">
+                            <input type="button" value="Hitung" class="btn-submit" onclick="hitungluas()">
+                            <input type="reset" value="Reset" class="reset">
+                        </form>
+                    </th>
+                </tr>
+            </table>
+        </section>
+        <?-- Tampilan Keliling --?>
+        <section id="view-keliling">
+            <table>
+                <tr>
+                    <th>
+                        <h2>Hitung Keliling Segitiga</h2>
+                        <form>
+                            <label for="ab">Sisi AB</label>
+                            <input type="number" placeholder=" Nilai Sisi AB" id="ab" name="ab">
+                            <label for="bc">Sisi BC</label>
+                            <input type="number" placeholder=" Nilai Sisi BC" id="bc" name="bc">
+                            <label for="ca">Sisi CA</label>
+                            <input type="number" placeholder=" Nilai Sisi CA" id="ca" name="ca">
+                            <label for="keliling">Hasil ab + bc + ca :</label>
+                            <input type="number" name="Keliling" id="keliling" disabled placeholder=" = Hasil Keliling">
+                            <input type="button" value="Hitung" class="btn-submit" onclick="hitungkeliling()">
+                            <input type="reset" value="Reset" class="reset">
+                        </form>
+                    </th>
+                    <th>
+                        <a href="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Keliling%20Segitiga%20-%20Matematika%20Kelas%207.png"><img src="img/img02.png" alt="www.ruangguru.com" class="imgfluid"></a>
+                    </th>
+                </tr>
+            </table>
+        </section>
+    </main>
+<footer>
+    &copy; Copyright <strong><span>R•A•M</span></strong>. All Rights Reserved
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
