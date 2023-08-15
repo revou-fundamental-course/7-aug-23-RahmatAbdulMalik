@@ -23,14 +23,27 @@ function skeliling() {
 function hitungluas() {
   alas=document.getElementById("alas").value;
   tinggi=document.getElementById("tinggi").value;
-  luas=0.5*(alas*tinggi)
-  document.getElementById("luas").value=luas;
+  if (alas=="" || tinggi=="") {
+    document.getElementById("pesanl").innerHTML = "Silahkan Masukan Angka Nilai Alas dan Tinggi";
+  }
+  else{
+    document.getElementById("pesanl").innerHTML = "";
+    luas=0.5*(alas*tinggi)
+    document.getElementById("luas").value=luas;}
+  
 }
 
 function hitungkeliling() {
   ab=document.getElementById("ab").value;
   bc=document.getElementById("bc").value;
   ca=document.getElementById("ca").value;
-  keliling=parseInt(ab)+parseInt(bc)+parseInt(ca);
-  document.getElementById("keliling").value=keliling;
+  if (ab=="" || bc=="" || ca=="") {
+    document.getElementById("pesank").innerHTML = "Silahkan Masukan Angka Nilai AB, BC dan CA";
+  }
+  else{
+    document.getElementById("pesank").innerHTML = "";
+    keliling=parseInt(ab)+parseInt(bc)+parseInt(ca);
+    document.getElementById("keliling").value=keliling;
+  }
+  
 }
